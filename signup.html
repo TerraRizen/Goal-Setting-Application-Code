@@ -2,104 +2,57 @@
 <html>
 <head>
   <title>Sign Up Form</title>
-  <style>
-    /* Add some general styles to the page */
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
+  <link rel="stylesheet" type="text/css" href="signup_styles.css">
 
-    /* Style the form */
-    form {
-      display: inline-block;
-      text-align: left;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #f2f2f2;
-      border-radius: 10px;
-      width: 500px;
-    }
-
-    /* Style the form inputs */
-    input[type="text"], input[type="password"], input[type="email"], textarea {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      box-sizing: border-box;
-      border: none;
-      background-color: #ddd;
-      border-radius: 4px;
-    }
-
-    /* Style the submit button */
-    input[type="submit"] {
-      width: 100%;
-      background-color: #4CAF50;
-      color: white;
-      padding: 14px 20px;
-      margin: 8px 0;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    /* Style the back button */
-    button {
-      width: 100%;
-      background-color: #4CAF50;
-      color: white;
-      padding: 14px 20px;
-      margin: 8px 0;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    /* Style the labels */
-    label {
-      color: #333;
-      font-weight: bold;
-      margin-bottom: 5px;
-      display: block;
-    }
-
-    /* Style the radio buttons */
-    input[type="radio"] {
-      margin-right: 10px;
-    }
-  </style>
 </head>
 <body>
   <h1>Sign Up Form</h1>
-  <form>
-    <label for="userid">User ID:</label>
-    <input type="text" id="userid" name="userid"><br><br>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password"><br><br>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name"><br><br>
+  <form method="post">
+    <label for="userid" class="required">User ID:</label>
+    <input type="text" id="userid" name="userid"><br>
+    <label class="feedback" id = "userid_feedback">UserID is required.</label><br>
+
+    <label for="password" class="required">Password:</label>
+    <input type="password" id="password" name="password"><br>
+    <label class="feedback" id = "password_feedback">Password is required.</label><br>
+
+    <label for="name" class="required">Name:</label>
+    <input type="text" id="name" name="name"><br>
+    <label class="feedback" id = "name_feedback">Name is required.</label><br>
+    
     <label for="address">Address:</label>
-    <input type="text" id="address" name="address"><br><br>
-    <label for="country">Country:</label>
-    <input type="text" id="country" name="country"><br><br>
-    <label for="zip">ZIP Code:</label>
-    <input type="text" id="zip" name="zip"><br><br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email"><br><br>
-    <label for="sex">Sex:</label>
+    <input type="text" id="address" name="address"><br>
+    <label class="feedback" id = "address_feedback"></label><br>
+
+    <label for="country" class="required">Country:</label>
+    <input type="text" id="country" name="country"><br>
+    <label class="feedback" id = "country_feedback">Country is required.</label><br>
+
+    <label for="zip" class="required">ZIP Code:</label>
+    <input type="text" id="zip" name="zip"><br>
+    <label class="feedback" id = "zip_feedback">ZIP code is required.</label><br>
+
+    <label for="email" class="required">Email:</label>
+    <input type="email" id="email" name="email"><br>
+    <label class="feedback" id = "email_feedback">Email is required.</label><br>
+
+    <label for="sex" class="required">Sex:</label>
     <input type="radio" id="sex" name="sex" value="male"> Male
     <input type="radio" id="sex" name="sex" value="female"> Female<br><br>
-    <label for="language">Language:</label>
+    <label for="language" class="required">Language:</label>
     <select id="language" name="language">
       <option value="english">English</option>
       <option value="french">French</option>
       <option value="spanish">Spanish</option>
     </select><br><br>
     <label for="about">About/Bio:</label>
-    <textarea id="about" name="about"></textarea><br><br>
+    <textarea id="about" name="about"></textarea><br>
+    <label class="feedback" id = "about_feedback"></label><br>
+
     <input type="submit" value="Submit">
   </form>
   <br>
   <button onclick="location.href='index.html'">Back to Main Page</button>
 </body>
+<script src="signupformlistener.js"></script>
 </html>
