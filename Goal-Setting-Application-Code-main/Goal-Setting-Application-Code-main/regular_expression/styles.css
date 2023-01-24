@@ -1,0 +1,162 @@
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #263238;
+  color: #FFFFFF;
+}
+
+.title-big {
+  text-align: center;
+  color:#FFFFFF;
+  font-size: x-large;
+}
+
+
+body {
+  background-color: #bebebe;
+}
+
+
+/* Style the buttons */
+.sign-in-button, .sign-up-button {
+  background-color: #FFFFFF;
+  color: #263238;
+  padding: 20px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 2px solid #263238;
+  text-align: center;
+}
+
+.sign-in-button:hover, .sign-up-button:hover {
+  background-color: #263238;
+  color: #FFFFFF;
+}
+
+.goals-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.goal {
+  width: 30%;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom:20px;
+  background-color: #311432;
+  margin-right:20px;
+}
+
+.goal-form {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  min-height: 70px;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+}
+
+.goal-title {
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
+}
+
+.goal-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.goal-content {
+  bottom: 20px;
+  right: 20px;
+}
+
+.due-date {
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em;
+  color: #FFFFFF;
+}
+
+
+.smart-boxes {
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.box {
+  
+  border-radius: 5px;
+  margin: 20px;
+  background-color: #e6cc00;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+}
+
+.numeric-task {
+  border-radius: 5px;
+  margin: 20px;
+  background-color: #FFA500;
+  color: #000000;
+  display: flex;
+  flex-direction: row;
+}
+
+.boolean-task {
+  border-radius: 5px;
+  margin: 20px;
+  background-color: #FF8B3D;
+  color: #000000;
+  display: flex;
+  flex-direction: row;
+}
+
+.monetary-task {
+  border-radius: 5px;
+  margin: 20px;
+  background-color: #FF781F;
+  color: #000000;
+  display: flex;
+  flex-direction: row;
+}
+
+.goalrelated-task {
+  border-radius: 5px;
+  margin: 20px;
+  background-color: #FF6600;
+  color: #000000;
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  font-size: medium;
+  margin-right: 15px;
+  color:#000000;
+  margin-left: 15px;
+}
+
+.task-title {
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.description {
+  font-size: small;
+  color:#000000;
+}
